@@ -81,20 +81,20 @@ void start(char ** argv){
         char temp2[8] = "read";
         
         int result1 = strncmp(temp1,argv[4],10);
-        printf("result1: %d\n",result1);
+        //printf("result1: %d\n",result1);
  
         int result2 = strncmp(temp2,argv[4],10);
-         printf("result2: %d\n",result2); 
+         //printf("result2: %d\n",result2); 
  
 
-        printf("arg0: %s, arg1: %s, arg2: %s,\n arg3: %s, arg4: %s\n",
-                argv[0],argv[1],argv[2],argv[3],argv[4]); 
+        //printf("arg0: %s, arg1: %s, arg2: %s,\n arg3: %s, arg4: %s\n",
+                //argv[0],argv[1],argv[2],argv[3],argv[4]); 
 
 	if(argv[1] != NULL && argv[2] != NULL && argv[3] != NULL && result1 == 0 )
 	{
-                printf("entered\n");
+                //printf("entered\n");
 		imgSize = calcSize(argv[1]);
-		printf("size: %d, File: %s\n",imgSize,argv[1]);
+		//printf("size: %d, File: %s\n",imgSize,argv[1]);
                 readIMG(argv[1],argv[2]);
 		openStream(argv[1],argv[2],argv[3]);
 		parityWrite(file1,file2,file3,buff1,buff2,imgSize);
