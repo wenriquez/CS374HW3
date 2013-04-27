@@ -16,4 +16,4 @@ Read Mode
 
 device1, parity device, device to recover, read
 
-example: /dev/loop1 /dev/loop2 /dev/loop0 write
+example: /dev/loop1 /dev/loop2 /dev/loop0 read
