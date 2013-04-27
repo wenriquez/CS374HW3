@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <fcntl.h>
+#include "data.h"
+
+
+
+
+
+int TestcalcIMG(char *argv) {
+         
+    
+long expected = 1474560;    
+long res = calcSize(argv);
+
+if(expected == res)
+   return 0;
+else
+   return 1;
+         
+}
+
+int runTests(char *argv) {
+
+    int passCount = 0;
+
+    passCount += TestcalcIMG(argv); 
+
+    return passCount;
+}
+
+
+
+
+
