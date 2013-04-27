@@ -28,9 +28,9 @@ void openStream(char *argv1,char*argv2,char*argv3);
 
 void openStream(char *argv1,char*argv2,char*argv3){
 	
-        file1 = open(argv1, O_CREAT|O_TRUNC|O_RDWR, 0666);
-        file2 = open(argv2, O_CREAT|O_TRUNC|O_RDWR, 0666);
-        file3 = open(argv3, O_CREAT|O_TRUNC|O_RDWR, 0666);
+        file1 = open(argv1,O_RDWR, 0666);
+        file2 = open(argv2,O_RDWR, 0666);
+        file3 = open(argv3,O_RDWR, 0666);
 
 }
 
